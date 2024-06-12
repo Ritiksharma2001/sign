@@ -52,14 +52,7 @@ downloadButton.addEventListener('click', () => {
 
 
 // Define the relative path to your Paytm QR code image
-const paytmQRCodeImageURL = 'http://localhost/C:\Users\om\Desktop\sign'; // Adjust the path as needed
 
-downloadButton.addEventListener('click', redirectToPaytmQRCode);
-
-function redirectToPaytmQRCode() {
-    // Replace 'paytmQRCodeImageURL' with the relative path to your Paytm QR code image
-    window.location.href = paytmQRCodeImageURL;
-}
 
 
 function startDrawing(event) {
