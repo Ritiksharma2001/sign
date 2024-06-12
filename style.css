@@ -21,6 +21,7 @@ canvas {
     border: 1px solid #000;
     background-color: #fff;
     cursor: crosshair;
+    transform-origin: center center;
 }
 
 .controls {
@@ -30,19 +31,18 @@ canvas {
     justify-content: center;
 }
 
-.cont-col{
+.cont-col {
     display: flex;
     margin-top: 34px;
     justify-content: center;
 }
 
-label, input{
+label, input {
     margin: -12px 10px;
     cursor: pointer;
 }
 
-
-.bt-col{
+.bt-col {
     display: flex;
     margin-top: 34px;
     justify-content: center;
@@ -60,8 +60,7 @@ button {
 
 @media (max-width: 768px) {
     .container {
-        rotate: 89.2deg;
-        width: 101%;
+        width: 95%;
     }
 
     button {
@@ -72,8 +71,13 @@ button {
 
 @media (max-width: 480px) {
     .container {
-        rotate: 89.2deg;
         width: 100%;
+    }
+
+    canvas {
+        transform: rotate(90deg);
+        width: calc(100vh - 20px); /* Adjust if there's padding/margin */
+        height: calc(100vw - 20px);
     }
 
     button {
