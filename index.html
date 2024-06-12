@@ -3,24 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Signature Pad</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <h1>Signature Pad</h1>
         <canvas id="signature-canvas" width="600" height="200"></canvas>
         <div class="controls">
+            <div class="cont-col">
             <label for="background-color">Background Color:</label>
             <input type="color" id="background-color" value="#ffffff">
             
             <label for="text-color">Text Color:</label>
             <input type="color" id="text-color" value="#000000">
-            
-            <button id="clear-button">Clear</button>
-            <button id="download-button">Download</button>
         </div>
     </div>
+
+    <div class="bt-col">
+        <button id="clear-button">Clear</button>
+        <button id="download-button">Download</button>
+    </div>
+    
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>

@@ -30,19 +30,38 @@ canvas {
     justify-content: center;
 }
 
+.cont-col{
+    display: flex;
+    margin-top: 34px;
+    justify-content: center;
+}
+
+label, input{
+    margin: -12px 10px;
+    cursor: pointer;
+}
+
+
+.bt-col{
+    display: flex;
+    margin-top: 34px;
+    justify-content: center;
+}
+
 button {
-    margin: 5px;
+    margin: 9px 12px;
     padding: 10px 15px;
     cursor: pointer;
-    flex: 1 1 100px;
-    max-width: calc(33% - 10px);
+    flex: 1 1 106px;
+    max-width: calc(52% - 26px);
 }
 
 /* Media Queries for Responsive Design */
 
 @media (max-width: 768px) {
     .container {
-        width: 95%;
+        rotate: 89.2deg;
+        width: 101%;
     }
 
     button {
@@ -53,6 +72,7 @@ button {
 
 @media (max-width: 480px) {
     .container {
+        rotate: 89.2deg;
         width: 100%;
     }
 
